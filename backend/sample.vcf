@@ -1,0 +1,22 @@
+##fileformat=VCFv4.2
+##source=PharmaGuardSampleData
+##INFO=<ID=GENE,Number=1,Type=String,Description="Gene symbol">
+##INFO=<ID=STAR,Number=1,Type=String,Description="Star allele designation">
+##INFO=<ID=RSID,Number=1,Type=String,Description="dbSNP identifier">
+##INFO=<ID=CLNSIG,Number=1,Type=String,Description="Clinical significance">
+##INFO=<ID=EFFECT,Number=1,Type=String,Description="Functional effect">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read depth">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype quality">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SAMPLE001
+22	42526694	rs3892097	C	T	99	PASS	GENE=CYP2D6;STAR=*4;RSID=rs3892097;CLNSIG=Pharmacogenomic;EFFECT=Splicing_Defect	GT:DP:GQ	0/1:45:99
+22	42524947	rs5030655	T	TA	85	PASS	GENE=CYP2D6;STAR=*6;RSID=rs5030655;CLNSIG=Pharmacogenomic;EFFECT=Frameshift	GT:DP:GQ	0/0:38:85
+10	96541616	rs4244285	G	A	98	PASS	GENE=CYP2C19;STAR=*2;RSID=rs4244285;CLNSIG=Pharmacogenomic;EFFECT=Splicing_Defect	GT:DP:GQ	0/1:52:98
+10	96521657	rs12248560	C	T	92	PASS	GENE=CYP2C19;STAR=*17;RSID=rs12248560;CLNSIG=Pharmacogenomic;EFFECT=Increased_Transcription	GT:DP:GQ	0/1:41:92
+10	96702047	rs1799853	C	T	95	PASS	GENE=CYP2C9;STAR=*2;RSID=rs1799853;CLNSIG=Pharmacogenomic;EFFECT=Decreased_Activity	GT:DP:GQ	0/1:48:95
+10	96741053	rs1057910	A	C	88	PASS	GENE=CYP2C9;STAR=*3;RSID=rs1057910;CLNSIG=Pharmacogenomic;EFFECT=Decreased_Activity	GT:DP:GQ	0/0:35:88
+12	21331549	rs4149056	T	C	97	PASS	GENE=SLCO1B1;STAR=*5;RSID=rs4149056;CLNSIG=Pharmacogenomic;EFFECT=Decreased_Transport	GT:DP:GQ	1/1:55:97
+6	18130918	rs1800460	C	T	90	PASS	GENE=TPMT;STAR=*3B;RSID=rs1800460;CLNSIG=Pharmacogenomic;EFFECT=No_Activity	GT:DP:GQ	0/1:42:90
+6	18139228	rs1142345	A	G	93	PASS	GENE=TPMT;STAR=*3C;RSID=rs1142345;CLNSIG=Pharmacogenomic;EFFECT=No_Activity	GT:DP:GQ	0/1:44:93
+1	97915614	rs3918290	C	T	96	PASS	GENE=DPYD;STAR=*2A;RSID=rs3918290;CLNSIG=Pharmacogenomic;EFFECT=No_Activity	GT:DP:GQ	0/1:50:96
+1	97981395	rs55886062	A	C	82	PASS	GENE=DPYD;STAR=*13;RSID=rs55886062;CLNSIG=Pharmacogenomic;EFFECT=No_Activity	GT:DP:GQ	0/0:30:82
