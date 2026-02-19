@@ -33,6 +33,21 @@ const upload = multer({
     },
 });
 
+// Root route - Service discovery
+app.get('/', (req, res) => {
+    res.json({
+        message: 'Welcome to PharmaGuard API',
+        description: 'AI-powered Pharmacogenomic Risk Prediction System',
+        endpoints: [
+            { path: '/', method: 'GET', description: 'API index and service discovery' },
+            { path: '/api/health', method: 'GET', description: 'Service health check' },
+            { path: '/api/drugs', method: 'GET', description: 'List of supported drugs for analysis' },
+            { path: '/api/analyze', method: 'POST', description: 'Analyze VCF file for drug risks (form-data: vcf_file, drugs)' }
+        ],
+        documentation: 'Visit /api/health for system status.'
+    });
+});
+
 // Health check
 app.get('/api/health', (req, res) => {
     res.json({
