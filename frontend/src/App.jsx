@@ -5,8 +5,7 @@ import DrugInput from './components/DrugInput';
 import ResultsDashboard from './components/ResultsDashboard';
 import JSONViewer from './components/JSONViewer';
 import ErrorDisplay from './components/ErrorDisplay';
-
-const API_URL = 'http://localhost:3001';
+const API_URL = import.meta.env.VITE_API_URL || 'https://rift-kgqz.onrender.com';
 
 const LOADING_STEPS = [
   'Validating VCF file...',
@@ -64,7 +63,7 @@ export default function App() {
     } catch (err) {
       setError({
         code: 'NETWORK_ERROR',
-        message: 'Could not connect to the analysis server. Ensure the backend is running.',
+        message: `Could not connect to the analysis server at ${API_URL}. Ensure the backend is running and accessible (check for CORS or Mixed Content issues).`,
       });
     } finally {
       clearInterval(stepInterval);

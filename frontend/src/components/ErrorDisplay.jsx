@@ -23,7 +23,7 @@ export default function ErrorDisplay({ error }) {
             case 'PROCESSING_ERROR':
                 return { title: 'Processing Error', message: error.message || 'An error occurred during analysis.' };
             case 'NETWORK_ERROR':
-                return { title: 'Connection Error', message: 'Could not connect to the analysis server. Ensure the backend is running on port 3001.' };
+                return { title: 'Connection Error', message: error.message || 'Could not connect to the analysis server. Ensure the backend is reachable.' };
             default:
                 return { title: 'Error', message: error.message || error.error || 'An unexpected error occurred.' };
         }
