@@ -5,7 +5,7 @@ import DrugInput from './components/DrugInput';
 import ResultsDashboard from './components/ResultsDashboard';
 import JSONViewer from './components/JSONViewer';
 import ErrorDisplay from './components/ErrorDisplay';
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+const API_URL = import.meta.env.VITE_API_URL || 'https://rift-kgqz.onrender.com/';
 console.log('Using API_URL:', API_URL);
 
 const LOADING_STEPS = [
