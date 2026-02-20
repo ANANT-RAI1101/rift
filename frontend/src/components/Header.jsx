@@ -11,7 +11,7 @@ export default function Header() {
                 </div>
                 <div className="header-badge">
                     <span className="dot"></span>
-                    AI-Powered Analysis
+                    AI-Powered Analysis (Local)
                 </div>
             </div>
         </header>
